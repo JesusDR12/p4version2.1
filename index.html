@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+        body {
+            background-color: lightcyan; /* Fondo de color */
+        }
+    </style>
+</head>
+<body>	
+	<form action="">
+		Introduce tu nombre de comprador:
+		<input type="text" name="nombre"><br>
+		Introduce cuantos niños viajarán contigo:
+		<input type="number" name="niños" min="0" max="5" value="0"><br>
+		Introduce la cantidad de boletos que vas a llevar:
+		<input type="number" name="cantidad" min="0" max="5" value="0"><br>
+		Introduce el horario en donde deseas comprar los boletos segun el numero: <br>
+		<b>introduce numero 1 Mañana<br> Introduce numero 2 Tarde<br>
+		Introduce numero 3 Noche</b><br>
+		<input type="number" name="horario" min="1" max="3"><br><br>
+		<input type="button"Onclick="calcula (nombre.value, niños.value,cantidad.value, horario.value);", value="Comprar">
+	    <button type="button" Onclick="limpiar()">Limpiar Todo</button>
+	</form>
+	<script type="text/javascript" src="calcular.js"></script>
+</body>
+</html>
